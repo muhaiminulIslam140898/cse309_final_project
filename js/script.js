@@ -81,8 +81,6 @@ const loginBtn = document.querySelector('.btn-login');
 if (loginBtn) {
     loginBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        // In a real app, this would show a login modal or redirect
-        alert('Login/Signup form would appear here in a real application');
     });
 }
 
