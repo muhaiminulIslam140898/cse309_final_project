@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments | Lok Lagbe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Lok Lagbe</h1>
+            <p>Your trusted domestic help</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="worker-categories.html">Find Help</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="booking.html">Bookings</a></li>
+            <li><a href="payment.html">Payments</a></li>
+            <li><a href="#" class="btn-login">Login/Signup</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="payments">
+        <div class="sidebar">
+            <div class="user-profile">
+                <img src="images/user-avatar.jpg" alt="User">
+                <h3>John Doe</h3>
+                <p>Member since: Jan 2023</p>
+            </div>
+            <ul class="dashboard-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="booking.html"><i class="fas fa-calendar-check"></i> Bookings</a></li>
+                <li class="active"><a href="payment.html"><i class="fas fa-credit-card"></i> Payments</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i> Favorites</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="dashboard-header">
+                <h2>Payment History</h2>
+                <div class="payment-balance">
+                    <span>Wallet Balance: ৳1,200</span>
+                    <button class="btn-primary">Add Funds</button>
+                </div>
+            </div>
+
+            <div class="payment-methods">
+                <h3>Payment Methods</h3>
+                <div class="methods-list">
+                    <div class="method-card active">
+                        <i class="fab fa-cc-visa"></i>
+                        <span>VISA **** 4242</span>
+                        <button class="btn-edit"><i class="fas fa-edit"></i></button>
+                    </div>
+                    <div class="method-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>bKash **** 1234</span>
+                        <button class="btn-edit"><i class="fas fa-edit"></i></button>
+                    </div>
+                    <button class="btn-secondary"><i class="fas fa-plus"></i> Add New Method</button>
+                </div>
+            </div>
+
+            <div class="payment-history">
+                <h3>Recent Transactions</h3>
+                <div class="history-table">
+                    <div class="table-header">
+                        <span>Date</span>
+                        <span>Description</span>
+                        <span>Amount</span>
+                        <span>Status</span>
+                    </div>
+                    <div class="table-row">
+                        <span>12 Jan 2023</span>
+                        <span>Payment to Ayesha Begum for cleaning service</span>
+                        <span>৳900</span>
+                        <span class="status completed">Completed</span>
+                    </div>
+                    <div class="table-row">
+                        <span>5 Jan 2023</span>
+                        <span>Payment to Rina Akter for childcare service</span>
+                        <span>৳1,200</span>
+                        <span class="status completed">Completed</span>
+                    </div>
+                    <div class="table-row">
+                        <span>28 Dec 2022</span>
+                        <span>Wallet top-up</span>
+                        <span>৳2,000</span>
+                        <span class="status completed">Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Lok Lagbe</h3>
+                <p>Connecting households with trusted domestic workers since 2023.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="worker-categories.html">Find Help</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="booking.html">Bookings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> contact@loklagbe.com</p>
+                <p><i class="fas fa-phone"></i> +880 1234 567890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Lok Lagbe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings | Lok Lagbe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Lok Lagbe</h1>
+            <p>Your trusted domestic help</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="worker-categories.html">Find Help</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="booking.html">Bookings</a></li>
+            <li><a href="payment.html">Payments</a></li>
+            <li><a href="#" class="btn-login">Login/Signup</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="bookings">
+        <div class="sidebar">
+            <div class="user-profile">
+                <img src="images/user-avatar.jpg" alt="User">
+                <h3>John Doe</h3>
+                <p>Member since: Jan 2023</p>
+            </div>
+            <ul class="dashboard-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li class="active"><a href="booking.html"><i class="fas fa-calendar-check"></i> Bookings</a></li>
+                <li><a href="payment.html"><i class="fas fa-credit-card"></i> Payments</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i> Favorites</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="dashboard-header">
+                <h2>Book a Service</h2>
+            </div>
+
+            <div class="booking-form-container">
+                <div class="worker-summary">
+                    <div class="worker-image">
+                        <img id="worker-img" src="images/maid.jpg" alt="Worker">
+                    </div>
+                    <div class="worker-details">
+                        <h3 id="worker-name">Ayesha Begum</h3>
+                        <p class="service-type" id="worker-service">Maid Service</p>
+                        <p class="rate" id="worker-rate">৳300/hour</p>
+                        <p class="rating" id="worker-rating">4.8 <i class="fas fa-star"></i></p>
+                    </div>
+                </div>
+
+                <form class="booking-form" id="booking-form">
+                    <div class="form-group">
+                        <label for="service-type">Service Type</label>
+                        <select id="service-type" required>
+                            <option value="">Select Service</option>
+                            <option value="cleaning">Cleaning</option>
+                            <option value="cooking">Cooking</option>
+                            <option value="laundry">Laundry</option>
+                            <option value="childcare">Childcare</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="booking-date">Date & Time</label>
+                        <input type="text" id="booking-date" placeholder="Select date and time" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="duration">Duration (hours)</label>
+                        <input type="number" id="duration" min="1" max="8" value="2" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Service Address</label>
+                        <textarea id="address" rows="3" required>123 Main Street, Dhaka</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="special-notes">Special Instructions</label>
+                        <textarea id="special-notes" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="bkash">bKash</option>
+                            <option value="card">Credit/Debit Card</option>
+                            <option value="cash">Cash (On Service)</option>
+                        </select>
+                    </div>
+
+                    <div class="booking-summary">
+                        <h3>Booking Summary</h3>
+                        <div class="summary-row">
+                            <span>Service Rate</span>
+                            <span id="summary-rate">৳300/hour</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Duration</span>
+                            <span id="summary-duration">2 hours</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total Amount</span>
+                            <span id="summary-total">৳600</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Lok Lagbe</h3>
+                <p>Connecting households with trusted domestic workers since 2023.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="worker-categories.html">Find Help</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="booking.html">Bookings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> contact@loklagbe.com</p>
+                <p><i class="fas fa-phone"></i> +880 1234 567890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Lok Lagbe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.js"></script>
+</body>
+</html>

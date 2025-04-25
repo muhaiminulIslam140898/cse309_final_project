@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Lok Lagbe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Lok Lagbe</h1>
+            <p>Your trusted domestic help</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="worker-categories.html">Find Help</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="booking.html">Bookings</a></li>
+            <li><a href="payment.html">Payments</a></li>
+            <li><a href="#" class="btn-login">Login/Signup</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="sidebar">
+            <div class="user-profile">
+                <img src="images/user-avatar.jpg" alt="User">
+                <h3>John Doe</h3>
+                <p>Member since: Jan 2023</p>
+            </div>
+            <ul class="dashboard-menu">
+                <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="booking.html"><i class="fas fa-calendar-check"></i> Bookings</a></li>
+                <li><a href="payment.html"><i class="fas fa-credit-card"></i> Payments</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i> Favorites</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="dashboard-header">
+                <h2>Dashboard Overview</h2>
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+            </div>
+
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #e3f2fd;">
+                        <i class="fas fa-calendar" style="color: #2196f3;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Upcoming Bookings</h3>
+                        <p>5</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #e8f5e9;">
+                        <i class="fas fa-check-circle" style="color: #4caf50;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Completed</h3>
+                        <p>12</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #fff3e0;">
+                        <i class="fas fa-star" style="color: #ff9800;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Your Rating</h3>
+                        <p>4.7/5</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #f3e5f5;">
+                        <i class="fas fa-wallet" style="color: #9c27b0;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Spent</h3>
+                        <p>৳8,500</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-activity">
+                <h3>Recent Activity</h3>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-calendar-plus"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p>New booking confirmed with <strong>Ayesha Begum</strong> for tomorrow at 10:00 AM</p>
+                            <small>2 hours ago</small>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p>You rated <strong>Rina Akter</strong> 5 stars for childcare service</p>
+                            <small>1 day ago</small>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p>Payment of ৳1,200 for cleaning service completed</p>
+                            <small>2 days ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Lok Lagbe</h3>
+                <p>Connecting households with trusted domestic workers since 2023.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="worker-categories.html">Find Help</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="booking.html">Bookings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> contact@loklagbe.com</p>
+                <p><i class="fas fa-phone"></i> +880 1234 567890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Lok Lagbe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

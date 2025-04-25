@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lok Lagbe - Domestic Worker Platform</title>
+    <title>Find Help | Lok Lagbe</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">
             <h1>Lok Lagbe</h1>
@@ -29,44 +28,51 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Find Trusted Domestic Help in Minutes</h1>
-            <p>Connecting households with verified domestic workers for all your home service needs.</p>
-            <div class="hero-buttons">
-                <a href="worker-categories.html" class="btn-primary">Find Help</a>
-                <a href="#" class="btn-secondary">Join as Worker</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="images/hero-image.jpg" alt="Happy domestic worker">
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="how-it-works">
-        <h2>How Lok Lagbe Works</h2>
-        <div class="steps">
-            <div class="step">
-                <div class="step-number">1</div>
-                <h3>Choose a Service</h3>
-                <p>Select from our various domestic service categories</p>
-            </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <h3>Find a Worker</h3>
-                <p>Browse verified professionals with ratings and reviews</p>
-            </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <h3>Book & Pay</h3>
-                <p>Schedule a time and make secure payments</p>
+    <section class="worker-search">
+        <div class="search-container">
+            <h2 id="category-title">Find Domestic Help</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Search by skill or name">
+                <select id="location-filter">
+                    <option value="">All Locations</option>
+                    <option value="dhaka">Dhaka</option>
+                    <option value="chittagong">Chittagong</option>
+                    <option value="sylhet">Sylhet</option>
+                </select>
+                <button class="btn-primary">Search</button>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="worker-listings">
+        <div class="filters">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <h4>Service Type</h4>
+                <label><input type="checkbox" checked> Cleaning</label>
+                <label><input type="checkbox" checked> Cooking</label>
+                <label><input type="checkbox" checked> Washing</label>
+                <label><input type="checkbox" checked> Full-time</label>
+                <label><input type="checkbox" checked> Part-time</label>
+            </div>
+            <div class="filter-group">
+                <h4>Rating</h4>
+                <label><input type="checkbox" checked> 4+ Stars</label>
+                <label><input type="checkbox" checked> 3+ Stars</label>
+            </div>
+            <div class="filter-group">
+                <h4>Price Range (৳/hr)</h4>
+                <input type="range" min="100" max="1000" value="500" class="slider" id="price-range">
+                <p>Max: ৳<span id="price-value">500</span></p>
+            </div>
+            <button class="btn-secondary">Apply Filters</button>
+        </div>
+
+        <div class="workers" id="workers-container">
+            <!-- Worker cards will be dynamically inserted here by JavaScript -->
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
